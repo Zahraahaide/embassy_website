@@ -1,0 +1,70 @@
+.visa-management {
+    padding: 20px;
+  }
+  
+  .visa-management table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .visa-management th, .visa-management td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .visa-management th {
+    background-color: #f2f2f2;
+  }
+  
+  .visa-management button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .document-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .document-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .document-modal-content h3 {
+    margin-top: 0;
+  }
+  
+  .document-modal-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .document-modal-content li {
+    margin-bottom: 10px;
+  }
+  
+  .document-modal-content a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .document-modal-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .document-modal-content button {
+    margin-top: 15px;
+  }

@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  backend:
+    build: /home/erfan/Desktop/zahra/zahrathesis/embassy-website/embassy-website/embassy-backend
+    container_name: backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/embassy_db
+    depends_on:
+      - mongo
+    command: npm run dev
+
+  frontend:
+    build: /home/erfan/Desktop/zahra/zahrathesis/embassy-website/embassy-website
+    container_name: frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    command: npm start
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

@@ -1,0 +1,88 @@
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Increased height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+  
+  .banner-content {
+    width: 100%;
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .banner-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .banner-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .dropdown-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  .services-dropdown {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .services-dropdown:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .services-dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0056b3;
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      height: 400px;
+      align-items: flex-start;
+      padding-top: 50px;
+    }
+  
+    .banner-title {
+      font-size: 2.5rem;
+    }
+  
+    .banner-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .dropdown-container {
+      width: 90%;
+    }
+  }

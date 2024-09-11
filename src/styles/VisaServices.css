@@ -1,0 +1,163 @@
+.visa-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .visa-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #0056b3, #00326b);
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+  
+  .visa-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .visa-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .visa-types h2, .tour-offers h2, .visa-application h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .visa-grid, .tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .visa-card, .tour-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .visa-card:hover, .tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .visa-icon {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+  }
+  
+  .visa-card h3, .tour-card h3 {
+    color: #0056b3;
+    margin-bottom: 0.5rem;
+  }
+  
+  .visa-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .visa-modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .visa-modal-content h2 {
+    color: #0056b3;
+    margin-bottom: 1rem;
+  }
+  
+  .visa-modal-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .visa-modal-content button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tour-offers {
+    margin-top: 4rem;
+  }
+  
+  .tour-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tour-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .visa-application {
+    text-align: center;
+    margin-top: 4rem;
+    background-color: #f8f9fa;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+  
+  .apply-visa-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .apply-visa-btn:hover {
+    background-color: #003d82;
+  }
+  
+  @media (max-width: 768px) {
+    .visa-services {
+      padding: 1rem;
+    }
+  
+    .visa-header {
+      padding: 2rem;
+    }
+  
+    .visa-header h1 {
+      font-size: 2rem;
+    }
+  
+    .visa-grid, .tour-grid {
+      grid-template-columns: 1fr;
+    }
+  }

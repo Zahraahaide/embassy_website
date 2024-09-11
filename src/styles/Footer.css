@@ -1,0 +1,138 @@
+.site-footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 3rem 0 1rem;
+    font-size: 0.9rem;
+    border-top: 2px solid #0056b3;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 2rem;
+    min-width: 220px;
+  }
+  
+  .footer-section h3 {
+    color: #0056b3;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .contact-info p,
+  .working-hours li,
+  .quick-links li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .contact-info svg,
+  .working-hours svg {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #0056b3;
+  }
+  
+  .google-map {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .working-hours ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quick-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quick-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .quick-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links a:hover {
+    color: #0056b3;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    color: #333;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0056b3;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-bottom p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Adding space between the Working Hours and Contact Info (Google Map) sections */
+  .footer-section.contact-info {
+    margin-right: 2rem;
+  }
+  
+  .footer-section.working-hours {
+    margin-left: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .google-map iframe {
+      width: 100%;
+    }
+  
+    .footer-section.contact-info,
+    .footer-section.working-hours {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
